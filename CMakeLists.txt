@@ -1,7 +1,7 @@
 ﻿# CMakeList.txt: proyecto de CMake para Prueba_CMake, incluya el origen y defina
 # la lógica específica del proyecto aquí.
 #
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required (VERSION 3.12)
 
 # Habilite Recarga activa para los compiladores de MSVC si se admiten.
 if (POLICY CMP0141)
@@ -9,13 +9,13 @@ if (POLICY CMP0141)
   set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
 endif()
 
-project ("Prueba_CMake")
+project ("Intermedia-2")
 
 # Agregue un origen al ejecutable de este proyecto.
-add_executable (Prueba_CMake "Prueba_CMake.cpp" "Prueba_CMake.h")
+add_executable (Intermedia-2 "Intermedia-2.cpp" "Intermedia-2.h")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET Prueba_CMake PROPERTY CXX_STANDARD 20)
+  set_property(TARGET Intermedia-2 PROPERTY CXX_STANDARD 20)
 endif()
 
 # TODO: Agregue pruebas y destinos de instalación si es necesario.
