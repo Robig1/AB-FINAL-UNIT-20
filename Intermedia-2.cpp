@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <string>
 #include <algorithm>
@@ -16,7 +16,6 @@
 
 using namespace std;
 
-// Utilidades para manejo de fechas
 class Fecha {
     int dia, mes, anio;
 
@@ -77,7 +76,6 @@ public:
     }
 };
 
-// Enumeraciones y estructuras de utilidad
 enum class Especialidad {
     CARDIOLOGIA,
     DERMATOLOGIA,
@@ -121,7 +119,6 @@ struct HistorialClinico {
     }
 };
 
-// Clases base
 class Persona {
 protected:
     string nombre;
@@ -134,13 +131,11 @@ public:
         : nombre(n), id(i), telefono(t), email(e) {}
     virtual ~Persona() = default;
 
-    // Getters
     string getNombre() const { return nombre; }
     string getID() const { return id; }
     string getTelefono() const { return telefono; }
     string getEmail() const { return email; }
 
-    // Setters
     void setNombre(string n) { nombre = n; }
     void setID(string i) { id = i; }
     void setTelefono(string t) { telefono = t; }
@@ -201,13 +196,11 @@ public:
         string csv = Persona::toCSV() + "," + fechaIngreso.toString() + "," + 
                     grupoSanguineo + "," + to_string(activo);
         
-        // Agregar alergias
         csv += ",";
         for (const auto& alergia : alergias) {
             csv += alergia + ";";
         }
         
-        // Agregar historial
         csv += ",";
         for (const auto& h : historial) {
             csv += h.toString() + ";";
@@ -231,7 +224,6 @@ public:
             grupoSanguineo = tokens[5];
             activo = (tokens[6] == "1");
 
-            // Procesar alergias
             stringstream ss_alergias(tokens[7]);
             string alergia;
             while (getline(ss_alergias, alergia, ';')) {
@@ -240,15 +232,12 @@ public:
                 }
             }
 
-            // Procesar historial
             if (tokens.size() > 8) {
                 stringstream ss_historial(tokens[8]);
                 string entrada;
                 while (getline(ss_historial, entrada, ';')) {
                     if (!entrada.empty()) {
-                        // Procesar cada entrada del historial
-                        // Aquí deberías parsear la entrada según el formato de toString()
-                        // de HistorialClinico y crear nuevos objetos HistorialClinico
+
                     }
                 }
             }
@@ -276,7 +265,7 @@ public:
 class Medico : public Persona {
     Especialidad especialidad;
     bool disponible;
-    map<Fecha, vector<string>> citasAsignadas; // Fecha -> IDs de las citas
+    map<Fecha, vector<string>> citasAsignadas;
 
 public:
     Medico(string n, string i, Especialidad esp)
@@ -300,7 +289,7 @@ public:
 
     bool tieneDisponibilidad(const Fecha& fecha) const {
         auto it = citasAsignadas.find(fecha);
-        return it == citasAsignadas.end() || it->second.size() < 8; // Máximo 8 citas por día
+        return it == citasAsignadas.end() || it->second.size() < 8;
     }
 
     string toCSV() const override {
@@ -345,14 +334,13 @@ class Cita {
     string hora;
     string motivo;
     bool urgente;
-    string estado; // "Pendiente", "Completada", "Cancelada"
+    string estado;
 
 public:
     Cita(string i, string ip, string im, const Fecha& f, string h, string m, bool u = false)
         : id(i), idPaciente(ip), idMedico(im), fecha(f), hora(h), motivo(m),
           urgente(u), estado("Pendiente") {}
 
-    // Getters
     string getID() const { return id; }
     string getIdPaciente() const { return idPaciente; }
     string getIdMedico() const { return idMedico; }
@@ -362,7 +350,6 @@ public:
     bool isUrgente() const { return urgente; }
     string getEstado() const { return estado; }
 
-    // Setters
     void setFecha(const Fecha& f) { fecha = f; }
     void setHora(string h) { hora = h; }
     void setMotivo(string m) { motivo = m; }
@@ -421,7 +408,6 @@ public:
         guardarDatos();
     }
 
-    // Gestión de Pacientes
     bool agregarPaciente(unique_ptr<Paciente> paciente) {
         string id = paciente->getID();
         if (pacientes.find(id) != pacientes.end()) return false;
@@ -434,7 +420,7 @@ public:
         return it != pacientes.end() ? it->second.get() : nullptr;
     }
 
-    // Gestión de Médicos
+
     bool agregarMedico(unique_ptr<Medico> medico) {
         string id = medico->getID();
         if (medicos.find(id) != medicos.end()) return false;
@@ -457,22 +443,22 @@ public:
         return resultado;
     }
 
-    // Gestión de Citas
+
     string generarIdCita() {
         return "CIT" + to_string(citas.size() + 1);
     }
 
     bool agendarCita(string idPaciente, string idMedico, const Fecha& fecha, 
                      const string& hora, const string& motivo, bool urgente = false) {
-        // Verificar existencia de paciente y médico
+
         auto paciente = buscarPaciente(idPaciente);
         auto medico = buscarMedico(idMedico);
         if (!paciente || !medico) return false;
 
-        // Verificar disponibilidad del médico
+
         if (!medico->tieneDisponibilidad(fecha)) return false;
 
-        // Crear y agregar la cita
+
         string idCita = generarIdCita();
         auto cita = make_unique<Cita>(idCita, idPaciente, idMedico, fecha, hora, motivo, urgente);
         medico->agregarCita(fecha, idCita);
@@ -506,21 +492,19 @@ public:
         return citasPaciente;
     }
 
-    // Persistencia de datos
+
     void guardarDatos() {
-        // Guardar pacientes
+
         ofstream archivoPacientes(rutaArchivos + "pacientes.csv");
         for (const auto& [_, paciente] : pacientes) {
             archivoPacientes << paciente->toCSV() << "\n";
         }
 
-        // Guardar médicos
         ofstream archivoMedicos(rutaArchivos + "medicos.csv");
         for (const auto& [_, medico] : medicos) {
             archivoMedicos << medico->toCSV() << "\n";
         }
 
-        // Guardar citas
         ofstream archivoCitas(rutaArchivos + "citas.csv");
         for (const auto& [_, cita] : citas) {
             archivoCitas << cita->toCSV() << "\n";
@@ -528,36 +512,36 @@ public:
     }
 
 	void cargarDatos() {
-    // Cargar pacientes
+
     ifstream archivoPacientes(rutaArchivos + "pacientes.csv");
     string linea;
     while (getline(archivoPacientes, linea)) {
-        // Crear paciente con valores por defecto válidos
+
         auto paciente = make_unique<Paciente>("", "", Fecha()); 
         paciente->fromCSV(linea);
         pacientes[paciente->getID()] = move(paciente);
     }
 
-    // Cargar médicos
+
     ifstream archivoMedicos(rutaArchivos + "medicos.csv");
     while (getline(archivoMedicos, linea)) {
-        // Crear médico con valores por defecto válidos
+
         auto medico = make_unique<Medico>("", "", Especialidad::GENERAL);
         medico->fromCSV(linea);
         medicos[medico->getID()] = move(medico);
     }
 
-    // Cargar citas
+
     ifstream archivoCitas(rutaArchivos + "citas.csv");
     while (getline(archivoCitas, linea)) {
-        // Crear cita con valores por defecto válidos
+
         auto cita = make_unique<Cita>("", "", "", Fecha(), "", "");
         cita->fromCSV(linea);
         citas[cita->getID()] = move(cita);
     }
 }
 
-    // Reportes y estadísticas
+
     map<Especialidad, int> obtenerEstadisticasEspecialidades() {
         map<Especialidad, int> estadisticas;
         for (const auto& [_, cita] : citas) {
@@ -592,7 +576,7 @@ public:
              << "Total de medicos: " << medicos.size() << "\n"
              << "Total de citas: " << citas.size() << "\n\n";
 
-        // Mostrar distribución de especialidades
+
         map<Especialidad, int> distEsp;
         for (const auto& [_, medico] : medicos) {
             distEsp[medico->getEspecialidad()]++;
@@ -607,34 +591,29 @@ public:
 
 int main() {
 
-    // Crear el directorio datos/ de manera multiplataforma
 
     std::filesystem::create_directories("datos");
 
-    // Asegurarse de que existe el directorio datos/
     system("mkdir -p datos");
 
 	SistemaGestionClinica sistema;
 
-    // Crear algunos médicos de prueba
+
     auto medico1 = make_unique<Medico>("Dr. Juan Pérez", "M001", Especialidad::CARDIOLOGIA);
     auto medico2 = make_unique<Medico>("Dra. Ana García", "M002", Especialidad::PEDIATRIA);
 
-    // Crear algunos pacientes de prueba
+
     auto paciente1 = make_unique<Paciente>("Carlos López", "P001", Fecha(1, 1, 2024));
     auto paciente2 = make_unique<Paciente>("María Rodríguez", "P002", Fecha(2, 1, 2024));
 
-    // Agregar al sistema
     sistema.agregarMedico(move(medico1));
     sistema.agregarMedico(move(medico2));
     sistema.agregarPaciente(move(paciente1));
     sistema.agregarPaciente(move(paciente2));
 
-    // Agendar algunas citas
     sistema.agendarCita("P001", "M001", Fecha(25, 11, 2024), "10:00", "Consulta rutinaria");
     sistema.agendarCita("P002", "M002", Fecha(26, 11, 2024), "11:00", "Control pediátrico");
 
-    // Mostrar estadísticas
     sistema.mostrarEstadisticas();
 
     return 0;
