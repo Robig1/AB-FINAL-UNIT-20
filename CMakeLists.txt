@@ -12,7 +12,7 @@ endif()
 project ("Intermedia-2")
 
 # Agregue un origen al ejecutable de este proyecto.
-add_executable (Intermedia-2 "Intermedia-2.cpp" "Intermedia-2.h")
+add_executable (Intermedia-2 "Intermedia-2.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Intermedia-2 PROPERTY CXX_STANDARD 20)

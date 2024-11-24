@@ -594,7 +594,7 @@ int main() {
 
     std::filesystem::create_directories("datos");
 
-    system("mkdir -p datos");
+    system("mkdir datos");
 
 	SistemaGestionClinica sistema;
 
