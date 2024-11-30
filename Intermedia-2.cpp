@@ -400,7 +400,7 @@ class SistemaGestionClinica {
     string rutaArchivos;
 
 public:
-    SistemaGestionClinica(const string& ruta = "./datos/") : rutaArchivos(ruta) {
+    SistemaGestionClinica(const string& ruta = "./datos_hospital/") : rutaArchivos(ruta) {
         cargarDatos();
     }
 
@@ -592,9 +592,9 @@ public:
 int main() {
 
 
-    std::filesystem::create_directories("datos");
+    std::filesystem::create_directories("datos_hospital");
 
-    system("mkdir datos");
+    system("mkdir datos_hospital");
 
 	SistemaGestionClinica sistema;
 
