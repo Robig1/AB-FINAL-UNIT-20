@@ -1,7 +1,4 @@
-﻿﻿# CMakeList.txt: proyecto de CMake para Intermedia-2, incluya el origen y defina
-# la lógica específica del proyecto aquí.
-#
-cmake_minimum_required (VERSION 3.12)
+﻿cmake_minimum_required(VERSION 3.12)
 
 # Habilite Recarga activa para los compiladores de MSVC si se admiten.
 if (POLICY CMP0141)
@@ -9,13 +6,20 @@ if (POLICY CMP0141)
   set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
 endif()
 
-project ("Intermedia-2")
+project("Intermedia-3")
 
-# Agregue un origen al ejecutable de este proyecto.
-add_executable (Intermedia-2 "Intermedia-2.cpp")
+# Configuración del estándar de C++
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET Intermedia-2 PROPERTY CXX_STANDARD 20)
-endif()
+# Incluir directorios de encabezados
+include_directories(include)
 
+# Agregar archivos fuente
+file(GLOB_RECURSE SOURCES "src/*.cpp")
+
+# Crear el ejecutable
+add_executable(Intermedia-3 ${SOURCES} )
+
+# Opcional: Agregar pruebas y destinos de instalación
 # TODO: Agregue pruebas y destinos de instalación si es necesario.
