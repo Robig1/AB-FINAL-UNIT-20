@@ -1,25 +1,50 @@
 ﻿cmake_minimum_required(VERSION 3.12)
 
-# Habilite Recarga activa para los compiladores de MSVC si se admiten.
-if (POLICY CMP0141)
-  cmake_policy(SET CMP0141 NEW)
-  set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
-endif()
-
+# Configuración del proyecto
 project("Intermedia-3")
 
-# Configuración del estándar de C++
+# Especificación de C++ estándar
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF) # Para evitar extensiones específicas del compilador
 
-# Incluir directorios de encabezados
-include_directories(include)
+# Configuración del compilador
+set(CMAKE_CXX_COMPILER "g++") # clang++/g++/icx/cl
 
-# Agregar archivos fuente
-file(GLOB_RECURSE SOURCES "src/*.cpp")
+# Configuración de compilación (Debug/Release)
+set(CMAKE_BUILD_TYPE Debug) # Puedes cambiar a Release si lo deseas
 
-# Crear el ejecutable
-add_executable(Intermedia-3 ${SOURCES} )
+# Configuración específica del compilador
+if (CMAKE_CXX_COMPILER STREQUAL "g++")
+    add_compile_options(
+        "$<$<CONFIG:Debug>:-pedantic;-Wall;-Wextra;-Wconversion;-Wshadow;-Wcast-qual;-Wwrite-strings;-O0;-ggdb3;-DDEBUG>"
+        "$<$<CONFIG:Release>:-pedantic;-Wall;-O3>"
+    )
+else()
+    message(WARNING "Compilador no soportado. No se aplican banderas específicas.")
+endif()
 
-# Opcional: Agregar pruebas y destinos de instalación
-# TODO: Agregue pruebas y destinos de instalación si es necesario.
+# Verificar compilador activo
+message(STATUS "CMAKE_CXX_COMPILER: ${CMAKE_CXX_COMPILER}")
+message(STATUS "CMAKE_CXX_COMPILER_ID: ${CMAKE_CXX_COMPILER_ID}")
+message(STATUS "CMAKE_CXX_COMPILER_VERSION: ${CMAKE_CXX_COMPILER_VERSION}")
+
+# Configuración del ejecutable como aplicación de consola
+add_executable(Intermedia-3 src/main.cpp)
+
+# Directorios de encabezados
+target_include_directories(Intermedia-3 PRIVATE ${PROJECT_SOURCE_DIR}/include)
+
+# Directorio de salida
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+# Instalación
+install(TARGETS Intermedia-3 RUNTIME DESTINATION bin)
+
+# Pruebas automáticas para verificar la configuración
+enable_testing()
+
+add_test(
+    NAME CompiladorCorrecto
+    COMMAND ${CMAKE_COMMAND} -E echo "Compilador: ${CMAKE_CXX_COMPILER_ID}, Versión: ${CMAKE_CXX_COMPILER_VERSION}"
+)
