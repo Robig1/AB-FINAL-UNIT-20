@@ -1,9 +1,9 @@
 #include <iostream>
 #include <filesystem>
-#include "sistema_gestion_clinica.hpp"
 #include "medico.hpp"
 #include "paciente.hpp"
 #include "fecha.hpp"
+#include "sistema_gestion_clinica.hpp"
 
 int main() {
     // Crear el directorio para almacenar datos

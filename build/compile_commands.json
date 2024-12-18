@@ -1,0 +1,56 @@
+[
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build",
+  "command": "g++  @CMakeFiles/Intermedia-3.dir/includes_CXX.rsp -g -std=c++20 -pedantic -Wall -Wextra -Wconversion -Wshadow -Wcast-qual -Wwrite-strings -O0 -ggdb3 -DDEBUG -o CMakeFiles\\Intermedia-3.dir\\src\\main.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\Intermedia-3\\src\\main.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/src/main.cpp",
+  "output": "CMakeFiles/Intermedia-3.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build",
+  "command": "g++  @CMakeFiles/Intermedia-3.dir/includes_CXX.rsp -g -std=c++20 -pedantic -Wall -Wextra -Wconversion -Wshadow -Wcast-qual -Wwrite-strings -O0 -ggdb3 -DDEBUG -o CMakeFiles\\Intermedia-3.dir\\src\\fecha.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\Intermedia-3\\src\\fecha.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/src/fecha.cpp",
+  "output": "CMakeFiles/Intermedia-3.dir/src/fecha.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build",
+  "command": "g++  @CMakeFiles/Intermedia-3.dir/includes_CXX.rsp -g -std=c++20 -pedantic -Wall -Wextra -Wconversion -Wshadow -Wcast-qual -Wwrite-strings -O0 -ggdb3 -DDEBUG -o CMakeFiles\\Intermedia-3.dir\\src\\especialidad.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\Intermedia-3\\src\\especialidad.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/src/especialidad.cpp",
+  "output": "CMakeFiles/Intermedia-3.dir/src/especialidad.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build",
+  "command": "g++  @CMakeFiles/Intermedia-3.dir/includes_CXX.rsp -g -std=c++20 -pedantic -Wall -Wextra -Wconversion -Wshadow -Wcast-qual -Wwrite-strings -O0 -ggdb3 -DDEBUG -o CMakeFiles\\Intermedia-3.dir\\src\\persona.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\Intermedia-3\\src\\persona.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/src/persona.cpp",
+  "output": "CMakeFiles/Intermedia-3.dir/src/persona.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build",
+  "command": "g++  @CMakeFiles/Intermedia-3.dir/includes_CXX.rsp -g -std=c++20 -pedantic -Wall -Wextra -Wconversion -Wshadow -Wcast-qual -Wwrite-strings -O0 -ggdb3 -DDEBUG -o CMakeFiles\\Intermedia-3.dir\\src\\paciente.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\Intermedia-3\\src\\paciente.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/src/paciente.cpp",
+  "output": "CMakeFiles/Intermedia-3.dir/src/paciente.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build",
+  "command": "g++  @CMakeFiles/Intermedia-3.dir/includes_CXX.rsp -g -std=c++20 -pedantic -Wall -Wextra -Wconversion -Wshadow -Wcast-qual -Wwrite-strings -O0 -ggdb3 -DDEBUG -o CMakeFiles\\Intermedia-3.dir\\src\\medico.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\Intermedia-3\\src\\medico.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/src/medico.cpp",
+  "output": "CMakeFiles/Intermedia-3.dir/src/medico.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build",
+  "command": "g++  @CMakeFiles/Intermedia-3.dir/includes_CXX.rsp -g -std=c++20 -pedantic -Wall -Wextra -Wconversion -Wshadow -Wcast-qual -Wwrite-strings -O0 -ggdb3 -DDEBUG -o CMakeFiles\\Intermedia-3.dir\\src\\historial_clinico.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\Intermedia-3\\src\\historial_clinico.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/src/historial_clinico.cpp",
+  "output": "CMakeFiles/Intermedia-3.dir/src/historial_clinico.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build",
+  "command": "g++  @CMakeFiles/Intermedia-3.dir/includes_CXX.rsp -g -std=c++20 -pedantic -Wall -Wextra -Wconversion -Wshadow -Wcast-qual -Wwrite-strings -O0 -ggdb3 -DDEBUG -o CMakeFiles\\Intermedia-3.dir\\src\\cita.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\Intermedia-3\\src\\cita.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/src/cita.cpp",
+  "output": "CMakeFiles/Intermedia-3.dir/src/cita.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build",
+  "command": "g++  @CMakeFiles/Intermedia-3.dir/includes_CXX.rsp -g -std=c++20 -pedantic -Wall -Wextra -Wconversion -Wshadow -Wcast-qual -Wwrite-strings -O0 -ggdb3 -DDEBUG -o CMakeFiles\\Intermedia-3.dir\\src\\sistema_gestion_clinica.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\Intermedia-3\\src\\sistema_gestion_clinica.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/src/sistema_gestion_clinica.cpp",
+  "output": "CMakeFiles/Intermedia-3.dir/src/sistema_gestion_clinica.cpp.obj"
+}
+]

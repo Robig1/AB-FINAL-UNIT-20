@@ -1,0 +1,8 @@
+C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build/CMakeFiles/Intermedia-3.dir
+C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build/CMakeFiles/test.dir
+C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build/CMakeFiles/edit_cache.dir
+C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build/CMakeFiles/list_install_components.dir
+C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build/CMakeFiles/install.dir
+C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build/CMakeFiles/install/local.dir
+C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/Intermedia-3/build/CMakeFiles/install/strip.dir
