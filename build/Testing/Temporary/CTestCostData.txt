@@ -1,2 +1,2 @@
-CompiladorCorrecto 1 0.0144438
+CompiladorCorrecto 2 0.014324
 ---

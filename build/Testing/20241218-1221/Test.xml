@@ -25,8 +25,8 @@
 	ProcessorClockFrequency="2419"
 	>
 	<Testing>
-		<StartDateTime>Dec 18 13:22 Hora est[NON-UTF-8-BYTE-0xE1]ndar romance</StartDateTime>
-		<StartTestTime>1734524555</StartTestTime>
+		<StartDateTime>Dec 18 13:28 Hora est[NON-UTF-8-BYTE-0xE1]ndar romance</StartDateTime>
+		<StartTestTime>1734524888</StartTestTime>
 		<TestList>
 			<Test>./CompiladorCorrecto</Test>
 		</TestList>
@@ -37,7 +37,7 @@
 			<FullCommandLine>"C:\Program Files\CMake\bin\cmake.exe" "-E" "echo" "Compilador: GNU, Versión: 13.2.0"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.0144438</Value>
+					<Value>0.0142042</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -57,8 +57,8 @@
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Dec 18 13:22 Hora est[NON-UTF-8-BYTE-0xE1]ndar romance</EndDateTime>
-		<EndTestTime>1734524555</EndTestTime>
+		<EndDateTime>Dec 18 13:28 Hora est[NON-UTF-8-BYTE-0xE1]ndar romance</EndDateTime>
+		<EndTestTime>1734524888</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

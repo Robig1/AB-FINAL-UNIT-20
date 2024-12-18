@@ -30,7 +30,8 @@ message(STATUS "CMAKE_CXX_COMPILER_ID: ${CMAKE_CXX_COMPILER_ID}")
 message(STATUS "CMAKE_CXX_COMPILER_VERSION: ${CMAKE_CXX_COMPILER_VERSION}")
 
 # Configuración del ejecutable como aplicación de consola
-add_executable(Intermedia-3 src/main.cpp
+add_executable(Intermedia-3 
+    src/main.cpp
     src/fecha.cpp
     src/especialidad.cpp
     src/persona.cpp
