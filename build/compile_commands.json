@@ -1,8 +1,38 @@
 [
 {
   "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\AB-Final-Unit-20.dir\\Intermedia-2.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\AB-FINAL\\Intermedia-2.cpp\"",
-  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/Intermedia-2.cpp",
-  "output": "CMakeFiles/AB-Final-Unit-20.dir/Intermedia-2.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/AB-FINAL.dir/includes_CXX.rsp -g -o CMakeFiles\\AB-FINAL.dir\\src\\main.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\AB-FINAL\\src\\main.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/src/main.cpp",
+  "output": "CMakeFiles/AB-FINAL.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/AB-FINAL.dir/includes_CXX.rsp -g -o CMakeFiles\\AB-FINAL.dir\\src\\Persona.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\AB-FINAL\\src\\Persona.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/src/Persona.cpp",
+  "output": "CMakeFiles/AB-FINAL.dir/src/Persona.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/AB-FINAL.dir/includes_CXX.rsp -g -o CMakeFiles\\AB-FINAL.dir\\src\\Paciente.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\AB-FINAL\\src\\Paciente.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/src/Paciente.cpp",
+  "output": "CMakeFiles/AB-FINAL.dir/src/Paciente.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/AB-FINAL.dir/includes_CXX.rsp -g -o CMakeFiles\\AB-FINAL.dir\\src\\Medico.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\AB-FINAL\\src\\Medico.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/src/Medico.cpp",
+  "output": "CMakeFiles/AB-FINAL.dir/src/Medico.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/AB-FINAL.dir/includes_CXX.rsp -g -o CMakeFiles\\AB-FINAL.dir\\src\\Cita.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\AB-FINAL\\src\\Cita.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/src/Cita.cpp",
+  "output": "CMakeFiles/AB-FINAL.dir/src/Cita.cpp.obj"
+},
+{
+  "directory": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/AB-FINAL.dir/includes_CXX.rsp -g -o CMakeFiles\\AB-FINAL.dir\\src\\GestionHospital.cpp.obj -c \"C:\\Users\\Robig\\Desktop\\MSMK\\Segundo Curso\\Primer Cuatrimestre\\UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES\\AB-FINAL\\src\\GestionHospital.cpp\"",
+  "file": "C:/Users/Robig/Desktop/MSMK/Segundo Curso/Primer Cuatrimestre/UNIT 20 - APPLIED PROGRAMMING & DESIGN PRINCIPLES/AB-FINAL/src/GestionHospital.cpp",
+  "output": "CMakeFiles/AB-FINAL.dir/src/GestionHospital.cpp.obj"
 }
 ]
