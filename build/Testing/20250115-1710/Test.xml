@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Win32-mingw32-make"
-	BuildStamp="20250114-1236-Experimental"
+	BuildStamp="20250115-1710-Experimental"
 	Name="MSIVECTOR17_UNI"
 	Generator="ctest-3.31.2"
 	CompilerName="C:/msys64/ucrt64/bin/g++.exe"
@@ -25,11 +25,11 @@
 	ProcessorClockFrequency="2419"
 	>
 	<Testing>
-		<StartDateTime>Jan 14 18:33 Hora est[NON-UTF-8-BYTE-0xE1]ndar romance</StartDateTime>
-		<StartTestTime>1736875996</StartTestTime>
+		<StartDateTime>Jan 15 18:10 Hora est[NON-UTF-8-BYTE-0xE1]ndar romance</StartDateTime>
+		<StartTestTime>1736961034</StartTestTime>
 		<TestList/>
-		<EndDateTime>Jan 14 18:33 Hora est[NON-UTF-8-BYTE-0xE1]ndar romance</EndDateTime>
-		<EndTestTime>1736875996</EndTestTime>
+		<EndDateTime>Jan 15 18:10 Hora est[NON-UTF-8-BYTE-0xE1]ndar romance</EndDateTime>
+		<EndTestTime>1736961034</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
