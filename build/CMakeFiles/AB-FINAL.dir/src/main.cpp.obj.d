@@ -104,6 +104,11 @@ CMakeFiles/AB-FINAL.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/vector.tcc \
  C:\Users\Robig\Desktop\MSMK\Segundo\ Curso\Primer\ Cuatrimestre\UNIT\ 20\ -\ APPLIED\ PROGRAMMING\ &\ DESIGN\ PRINCIPLES\AB-FINAL\src\Medico.hpp \
  C:\Users\Robig\Desktop\MSMK\Segundo\ Curso\Primer\ Cuatrimestre\UNIT\ 20\ -\ APPLIED\ PROGRAMMING\ &\ DESIGN\ PRINCIPLES\AB-FINAL\src\Cita.hpp \
+ C:/msys64/ucrt64/include/c++/13.2.0/ctime \
+ C:/msys64/ucrt64/include/time.h C:/msys64/ucrt64/include/sys/timeb.h \
+ C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
+ C:/msys64/ucrt64/include/_timeval.h \
+ C:/msys64/ucrt64/include/pthread_time.h \
  C:/msys64/ucrt64/include/c++/13.2.0/fstream \
  C:/msys64/ucrt64/include/c++/13.2.0/istream \
  C:/msys64/ucrt64/include/c++/13.2.0/ios \
@@ -121,10 +126,6 @@ CMakeFiles/AB-FINAL.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/corecrt_startup.h \
  C:/msys64/ucrt64/include/signal.h \
  C:/msys64/ucrt64/include/pthread_signal.h \
- C:/msys64/ucrt64/include/time.h C:/msys64/ucrt64/include/sys/timeb.h \
- C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
- C:/msys64/ucrt64/include/_timeval.h \
- C:/msys64/ucrt64/include/pthread_time.h \
  C:/msys64/ucrt64/include/pthread_compat.h \
  C:/msys64/ucrt64/include/pthread_unistd.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
